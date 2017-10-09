@@ -99,7 +99,7 @@ namespace Semafory
                 else
                 {
                     Console.WriteLine($"{Thread.CurrentThread.Name} zatrzymany.");
-                    Console.WriteLine($"{Thread.CurrentThread.Name} zatrzymany.");
+                    semaphore.Release();
                     return;
                 }
                 semaphore.Release();
@@ -121,6 +121,7 @@ namespace Semafory
             
             canvas.Children.Clear();
             listOfPoints.Clear();
+            points.Clear();
             iteration = Convert.ToInt32(txtIteration.Text);
 
             points.Push(startPoint);
