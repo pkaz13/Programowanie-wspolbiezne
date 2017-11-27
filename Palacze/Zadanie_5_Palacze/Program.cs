@@ -23,7 +23,7 @@ namespace Zadanie_5_Palacze
 
         private static List<TypZasobu> magazyn = new List<TypZasobu>();
 
-        private static int czasPalenia = 10000;
+        private static int czasPalenia = 5000;
 
         static void Main(string[] args)
         {
