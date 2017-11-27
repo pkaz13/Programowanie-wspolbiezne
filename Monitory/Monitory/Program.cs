@@ -27,8 +27,6 @@ namespace Monitory
         {
             int numberOFThreads = 3;
 
-
-
             for (int i = 0; i < numberOFThreads; i++)
             {
                 Thread A = new Thread(Request);

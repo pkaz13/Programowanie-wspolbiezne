@@ -17,13 +17,13 @@ namespace Zadanie_5_Palacze
 
         private static List<Palacz> ListaPalaczy = new List<Palacz>(3);
 
-        private static Semaphore pusty = new Semaphore(4, 4);   // pojemność magazynu
+        private static Semaphore pusty = new Semaphore(4, 4);  
         private static Semaphore pelny = new Semaphore(0, 4);
         private static Semaphore dostep = new Semaphore(1, 1);
 
         private static List<TypZasobu> magazyn = new List<TypZasobu>();
 
-        private static int czasPalenia = 10000;
+        private static int czasPalenia = 5000;
 
         static void Main(string[] args)
         {
@@ -106,7 +106,7 @@ namespace Zadanie_5_Palacze
         private static void PokazStanMagazynu()
         {
             Console.ForegroundColor = ConsoleColor.White;
-            Console.Write("\t\t Magazyn->" /* + new String(' ', magazyn.Count)*/ + magazyn.Count);
+            Console.Write("\t\t Magazyn :" /* + new String(' ', magazyn.Count)*/ + magazyn.Count);
         }
 
         private static void Palacz()
